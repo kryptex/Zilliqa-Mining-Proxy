@@ -18,37 +18,37 @@
 setup file
 """
 
-from zilpool import version
-from setuptools import setup
-
-packages = ["zilpool"]
-package_data = {"zilpool": ["*.conf", "tests/*"]}
-
-tests_require = ["pytest"]
-install_requires = [
-    "pyyaml", "jsonrpcserver", "aiohttp", "jsonrpcclient[aiohttp]",
-    "mongoengine", "pymongo", "cachetools",
-    "fastecdsa", "pyethash", "eth-hash[pycryptodome]",
-    "jinja2", "aiohttp_jinja2",
-]
-
-setup(
-    name="zilpool",
-    version=version,
-    description="Zilliqa mining proxy",
-    long_description="A mining proxy between Zilliqa nodes and GPU miners",
-    classifiers=[
-        "Development Status :: 3 - Alpha",
-        "Programming Language :: Python"
-    ],
-    keywords="zil mining proxy pool",
-    author="Gully Chen",
-    author_email="deepgully@gmail.com",
-    url="",
-    license="GNU General Public License",
-    packages=packages,
-    include_package_data=True,
-    package_data=package_data,
-    install_requires=install_requires,
-    tests_require=tests_require,
-)
+# from zilpool import version
+# from setuptools import setup
+#
+# packages = ["zilpool"]
+# package_data = {"zilpool": ["*.conf", "tests/*"]}
+#
+# tests_require = ["pytest"]
+# install_requires = [
+#     "pyyaml", "jsonrpcserver", "aiohttp", "jsonrpcclient[aiohttp]",
+#     "mongoengine", "pymongo", "cachetools",
+#     "fastecdsa", "pyethash", "eth-hash[pycryptodome]",
+#     "jinja2", "aiohttp_jinja2",
+# ]
+#
+# setup(
+#     name="zilpool",
+#     version=version,
+#     description="Zilliqa mining proxy",
+#     long_description="A mining proxy between Zilliqa nodes and GPU miners",
+#     classifiers=[
+#         "Development Status :: 3 - Alpha",
+#         "Programming Language :: Python"
+#     ],
+#     keywords="zil mining proxy pool",
+#     author="Gully Chen",
+#     author_email="deepgully@gmail.com",
+#     url="",
+#     license="GNU General Public License",
+#     packages=packages,
+#     include_package_data=True,
+#     package_data=package_data,
+#     install_requires=install_requires,
+#     tests_require=tests_require,
+# )

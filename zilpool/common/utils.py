@@ -20,7 +20,7 @@ import os
 import re
 import yaml
 import hashlib
-from collections import Mapping
+from collections.abc import Mapping
 from functools import wraps
 from concurrent.futures import ThreadPoolExecutor
 
@@ -47,7 +47,7 @@ def load_config(conf=app_path("default.conf")) -> MagicDict:
     :return: dict
     """
     with open(conf, "rb") as f:
-        return MagicDict(yaml.load(f))
+        return MagicDict(yaml.load(f, yaml.Loader))
 
 
 def merge_config(new_conf=None) -> MagicDict:
